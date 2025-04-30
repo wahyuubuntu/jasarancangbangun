@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import FooterNavigation from '@/components/FooterNavigation';
-import { ArrowLeft, Facebook, Twitter, WhatsApp, Share } from 'lucide-react';
+import { ArrowLeft, Facebook, Twitter, Share } from 'lucide-react';
 import { blogPosts } from '@/data/blogPosts';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
@@ -198,7 +197,7 @@ const BlogDetail = () => {
                     onClick={shareToWhatsApp} 
                     className="rounded-full hover:bg-green-50 hover:text-green-500"
                   >
-                    <WhatsApp size={18} />
+                    <Share size={18} />
                     <span className="sr-only">Share to WhatsApp</span>
                   </Button>
                   <Button 

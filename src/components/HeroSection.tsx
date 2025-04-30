@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Whatsapp } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button className="bg-construction-yellow hover:bg-yellow-500 text-construction-gray-dark font-medium px-6 py-2 flex items-center gap-2">
-            <Whatsapp size={20} />
+            <MessageSquare size={20} />
             Hubungi Kami
           </Button>
         </div>
