@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, FileText, QrCode } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { QRCode } from 'qrcode.react';
+import { QRCodeSVG } from 'qrcode.react';
 
 const FooterNavigation = () => {
   const [qrDialogOpen, setQrDialogOpen] = useState(false);
@@ -38,7 +38,7 @@ const FooterNavigation = () => {
             <DialogTitle className="text-xl font-bold text-construction-blue">Scan Our QR Code</DialogTitle>
           </DialogHeader>
           <div className="p-6 bg-white rounded-lg shadow-inner">
-            <QRCode 
+            <QRCodeSVG 
               value={window.location.origin} 
               size={200}
               fgColor="#0F4C81"
