@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, FileText, QrCode } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import QRCode from 'qrcode.react';
+import { QRCode } from 'qrcode.react';
 
 const FooterNavigation = () => {
   const [qrDialogOpen, setQrDialogOpen] = useState(false);

@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import FooterNavigation from '@/components/FooterNavigation';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
