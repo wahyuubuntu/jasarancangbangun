@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Whatsapp } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -12,11 +13,9 @@ const HeroSection = () => {
           Membangun masa depan dengan kualitas dan keahlian terbaik. Kami menyediakan layanan konstruksi lengkap untuk kebutuhan Anda.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button className="bg-construction-yellow hover:bg-yellow-500 text-construction-gray-dark font-medium px-6 py-2">
+          <Button className="bg-construction-yellow hover:bg-yellow-500 text-construction-gray-dark font-medium px-6 py-2 flex items-center gap-2">
+            <Whatsapp size={20} />
             Hubungi Kami
-          </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10">
-            Lihat Layanan
           </Button>
         </div>
       </div>

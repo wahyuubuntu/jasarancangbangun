@@ -20,13 +20,6 @@ const Index = () => {
                 Kontraktor<span className="text-construction-yellow">Pro</span>
               </div>
             </div>
-            <div className="hidden md:flex items-center gap-6 mt-3 md:mt-0">
-              <Link to="/" className="font-medium text-construction-blue hover:text-construction-yellow transition-colors">Beranda</Link>
-              <a href="#" className="font-medium text-gray-600 hover:text-construction-blue transition-colors">Layanan</a>
-              <a href="#" className="font-medium text-gray-600 hover:text-construction-blue transition-colors">Proyek</a>
-              <a href="#" className="font-medium text-gray-600 hover:text-construction-blue transition-colors">Tentang Kami</a>
-              <a href="#" className="font-medium text-gray-600 hover:text-construction-blue transition-colors">Kontak</a>
-            </div>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 mt-2 md:mt-0 text-sm">
               <div className="flex items-center">
                 <span className="mr-2 text-construction-yellow">📞</span>

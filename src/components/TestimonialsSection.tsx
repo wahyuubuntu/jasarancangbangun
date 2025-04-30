@@ -1,5 +1,12 @@
 
 import React from 'react';
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from '@/components/ui/carousel';
 import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
@@ -29,17 +36,30 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-construction-blue">Testimoni Klien</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="shadow-md border-l-4 border-construction-yellow">
-              <CardContent className="pt-6">
-                <div className="mb-4 text-4xl">{testimonial.avatar}</div>
-                <blockquote className="mb-4 italic text-gray-600">"{testimonial.content}"</blockquote>
-                <div className="font-semibold">{testimonial.name}</div>
-                <div className="text-sm text-gray-500">{testimonial.role}</div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="max-w-3xl mx-auto">
+          <Carousel
+            opts={{
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index}>
+                  <Card className="shadow-md border-l-4 border-construction-yellow mx-6">
+                    <CardContent className="pt-6 text-center">
+                      <div className="mb-4 text-4xl flex justify-center">{testimonial.avatar}</div>
+                      <blockquote className="mb-4 italic text-gray-600">"{testimonial.content}"</blockquote>
+                      <div className="font-semibold">{testimonial.name}</div>
+                      <div className="text-sm text-gray-500">{testimonial.role}</div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute -left-12 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white border-none text-construction-blue" />
+            <CarouselNext className="absolute -right-12 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white border-none text-construction-blue" />
+          </Carousel>
         </div>
       </div>
     </section>

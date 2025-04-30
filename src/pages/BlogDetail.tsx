@@ -2,8 +2,10 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import FooterNavigation from '@/components/FooterNavigation';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Facebook, Twitter, WhatsApp, Share } from 'lucide-react';
 import { blogPosts } from '@/data/blogPosts';
+import { Button } from '@/components/ui/button';
+import { toast } from '@/components/ui/use-toast';
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -19,6 +21,57 @@ const BlogDetail = () => {
       </div>
     );
   }
+  
+  const shareUrl = window.location.href;
+  const shareTitle = post.title;
+  
+  const shareToFacebook = () => {
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, '_blank');
+    toast({
+      title: "Dibagikan ke Facebook",
+      description: "Artikel telah dibagikan ke timeline Facebook Anda",
+    });
+  };
+  
+  const shareToTwitter = () => {
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareTitle)}&url=${encodeURIComponent(shareUrl)}`, '_blank');
+    toast({
+      title: "Dibagikan ke Twitter",
+      description: "Artikel telah dibagikan ke Twitter Anda",
+    });
+  };
+  
+  const shareToWhatsApp = () => {
+    window.open(`https://wa.me/?text=${encodeURIComponent(shareTitle + ' ' + shareUrl)}`, '_blank');
+    toast({
+      title: "Dibagikan ke WhatsApp",
+      description: "Artikel telah dibuka di WhatsApp Anda",
+    });
+  };
+  
+  const shareViaNavigator = async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: shareTitle,
+          url: shareUrl
+        });
+        toast({
+          title: "Berhasil Dibagikan",
+          description: "Artikel telah dibagikan",
+        });
+      } else {
+        // Fallback for browsers that don't support navigator.share
+        toast({
+          title: "Browser Tidak Mendukung",
+          description: "Fitur berbagi tidak didukung oleh browser Anda. Silakan gunakan tombol media sosial lainnya.",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      console.error('Error sharing:', error);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 pb-24">
@@ -116,13 +169,48 @@ const BlogDetail = () => {
               </p>
             </div>
             
-            <div className="mt-8 pt-6 border-t border-gray-200 flex items-center justify-between">
+            <div className="mt-8 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
               <span className="text-sm text-gray-500">{post.readTime} baca</span>
-              <div className="flex space-x-4">
+              <div className="flex items-center gap-4">
                 <span className="text-sm text-gray-500">Bagikan:</span>
-                <a href="#" className="text-construction-blue hover:text-construction-yellow">Facebook</a>
-                <a href="#" className="text-construction-blue hover:text-construction-yellow">Twitter</a>
-                <a href="#" className="text-construction-blue hover:text-construction-yellow">WhatsApp</a>
+                <div className="flex space-x-3">
+                  <Button 
+                    variant="outline" 
+                    size="icon" 
+                    onClick={shareToFacebook} 
+                    className="rounded-full hover:bg-blue-50 hover:text-blue-600"
+                  >
+                    <Facebook size={18} />
+                    <span className="sr-only">Share to Facebook</span>
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="icon" 
+                    onClick={shareToTwitter} 
+                    className="rounded-full hover:bg-blue-50 hover:text-sky-500"
+                  >
+                    <Twitter size={18} />
+                    <span className="sr-only">Share to Twitter</span>
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="icon" 
+                    onClick={shareToWhatsApp} 
+                    className="rounded-full hover:bg-green-50 hover:text-green-500"
+                  >
+                    <WhatsApp size={18} />
+                    <span className="sr-only">Share to WhatsApp</span>
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="icon" 
+                    onClick={shareViaNavigator} 
+                    className="rounded-full hover:bg-gray-50"
+                  >
+                    <Share size={18} />
+                    <span className="sr-only">Share via...</span>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

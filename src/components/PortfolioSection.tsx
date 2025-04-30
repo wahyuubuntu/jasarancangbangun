@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Carousel, 
   CarouselContent, 
@@ -40,6 +41,8 @@ const portfolioItems = [
     description: "Restorasi dan renovasi bangunan bersejarah dengan mempertahankan nilai arsitektur asli."
   }
 ];
+
+export { portfolioItems };
 
 const PortfolioSection = () => {
   return (
@@ -89,10 +92,12 @@ const PortfolioSection = () => {
           </Carousel>
 
           <div className="flex justify-center mt-8">
-            <Button className="bg-construction-blue hover:bg-construction-yellow text-white transition-colors flex items-center gap-2">
-              <Image className="h-4 w-4" />
-              Lihat Semua Proyek
-            </Button>
+            <Link to="/projects">
+              <Button className="bg-construction-blue hover:bg-construction-yellow text-white transition-colors flex items-center gap-2">
+                <Image className="h-4 w-4" />
+                Lihat Semua Proyek
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
