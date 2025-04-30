@@ -1,68 +1,32 @@
 
 import React from 'react';
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 import FooterNavigation from '@/components/FooterNavigation';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-
-const blogPosts = [
-  {
-    id: 1,
-    title: "Tips Memilih Kontraktor Terpercaya untuk Proyek Anda",
-    excerpt: "Memilih kontraktor yang tepat adalah langkah penting dalam kesuksesan proyek konstruksi. Artikel ini membahas beberapa tips penting yang perlu dipertimbangkan saat memilih kontraktor.",
-    date: "12 April 2025",
-    category: "Tips & Saran",
-    readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=870"
-  },
-  {
-    id: 2,
-    title: "Tren Desain Rumah Modern 2025 di Indonesia",
-    excerpt: "Ketahui tren desain rumah terbaru yang populer di Indonesia tahun ini, dari konsep minimalis hingga sentuhan tradisional modern yang menarik.",
-    date: "28 Maret 2025",
-    category: "Desain",
-    readTime: "8 menit",
-    image: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=1170"
-  },
-  {
-    id: 3,
-    title: "Material Konstruksi Ramah Lingkungan untuk Bangunan Berkelanjutan",
-    excerpt: "Eksplorasi berbagai pilihan material konstruksi ramah lingkungan yang dapat digunakan untuk membangun proyek yang lebih berkelanjutan dan hemat energi.",
-    date: "15 Maret 2025",
-    category: "Material",
-    readTime: "6 menit",
-    image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=1974"
-  },
-  {
-    id: 4,
-    title: "Cara Mengelola Anggaran Proyek Renovasi dengan Efektif",
-    excerpt: "Panduan praktis untuk mengelola anggaran proyek renovasi rumah agar tetap dalam batas dan menghindari pengeluaran tak terduga.",
-    date: "2 Maret 2025",
-    category: "Manajemen",
-    readTime: "7 menit",
-    image: "https://images.unsplash.com/photo-1628254095259-cd352547a0af?q=80&w=1170"
-  },
-  {
-    id: 5,
-    title: "Inspirasi Desain Interior untuk Ruang Terbatas",
-    excerpt: "Ide-ide kreatif untuk memaksimalkan ruang terbatas dengan desain interior yang fungsional namun tetap estetis dan nyaman.",
-    date: "18 Februari 2025",
-    category: "Interior",
-    readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1227"
-  },
-];
+import { blogPosts } from '@/data/blogPosts';
 
 const Blog = () => {
   return (
     <div className="min-h-screen bg-gray-50 pb-24">
-      {/* Header */}
-      <header className="sticky top-0 bg-white shadow-md z-40 px-4 py-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center">
-            <div className="flex items-center gap-2">
-              <div className="text-2xl font-bold text-construction-blue">Kontraktor<span className="text-construction-yellow">Pro</span></div>
+      {/* Header with contact info */}
+      <header className="sticky top-0 bg-white shadow-md z-40">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center py-4 px-4">
+            <div className="flex items-center">
+              <Link to="/" className="text-2xl font-bold text-construction-blue">
+                Kontraktor<span className="text-construction-yellow">Pro</span>
+              </Link>
+            </div>
+            <div className="flex flex-wrap justify-center md:justify-end gap-4 mt-2 md:mt-0 text-sm">
+              <div className="flex items-center">
+                <span className="mr-2 text-construction-yellow">📞</span>
+                <span>+62 812 3456 7890</span>
+              </div>
+              <div className="flex items-center">
+                <span className="mr-2 text-construction-yellow">✉️</span>
+                <span>info@kontraktor-profesional.com</span>
+              </div>
             </div>
           </div>
         </div>
@@ -103,33 +67,13 @@ const Blog = () => {
                 <p className="text-gray-600">{post.excerpt}</p>
               </CardContent>
               <CardFooter className="p-4 pt-0 flex justify-between items-center">
-                <a href="#" className="text-construction-blue hover:text-construction-yellow font-medium">
+                <Link to={`/blog/${post.id}`} className="text-construction-blue hover:text-construction-yellow font-medium">
                   Baca selengkapnya
-                </a>
+                </Link>
                 <span className="text-sm text-gray-500">{post.readTime} baca</span>
               </CardFooter>
             </Card>
           ))}
-        </div>
-
-        {/* Newsletter signup */}
-        <div className="mt-16 bg-construction-gray-light p-8 rounded-lg">
-          <div className="text-center max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-construction-blue">Dapatkan Update Terbaru</h3>
-            <p className="mb-6 text-gray-600">
-              Berlangganan newsletter kami untuk mendapatkan artikel terbaru dan tips konstruksi langsung ke email Anda.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Input 
-                type="email" 
-                placeholder="Alamat email Anda" 
-                className="flex-grow"
-              />
-              <Button className="bg-construction-blue hover:bg-blue-700 text-white">
-                Berlangganan
-              </Button>
-            </div>
-          </div>
         </div>
       </main>
 
