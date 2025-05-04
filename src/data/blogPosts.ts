@@ -20,17 +20,17 @@ export const blogPosts = [
   },
   {
     id: 3,
-    title: "Material Konstruksi Ramah Lingkungan untuk Bangunan Berkelanjutan",
-    excerpt: "Eksplorasi berbagai pilihan material konstruksi ramah lingkungan yang dapat digunakan untuk membangun proyek yang lebih berkelanjutan dan hemat energi.",
+    title: "Perbedaan Hebel dan Bata Merah",
+    excerpt: "Hebel (bata ringan) dan bata merah memiliki perbedaan utama dalam bahan baku, kekuatan, bobot, dan penggunaan. Hebel terbuat dari semen, pasir, kapur, dan bahan lainnya, lebih kuat, ringan, dan memiliki isolasi termal yang lebih baik. Bata merah, terbuat dari tanah liat, lebih berat, mudah ditemukan, dan lebih murah, cocok untuk bangunan kecil.",
     date: "15 Maret 2025",
     category: "Info",
     readTime: "1 menit",
-    image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=1974"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMlYnSHSO2hMoJUbJcfN1jF2ZbxCYF8-L8Ig&s"
   },
   {
     id: 4,
-    title: "Cara Mengelola Anggaran Proyek Renovasi dengan Efektif",
-    excerpt: "Panduan praktis untuk mengelola anggaran proyek renovasi rumah agar tetap dalam batas dan menghindari pengeluaran tak terduga.",
+    title: "Kamar Mandi Yang Baik",
+    excerpt: "Kamar mandi yang baik adalah yang bersih, sehat, dan fungsional. Beberapa faktor yang perlu diperhatikan dalam desain kamar mandi antara lain: pencahayaan yang cukup (terutama pencahayaan alami), ventilasi yang baik, pemeliharaan sanitasi, dan penggunaan perlengkapan yang hemat air. Selain itu, posisi kamar mandi juga penting, baik menurut Feng Shui maupun ajaran Islam",
     date: "2 Maret 2025",
     category: "Info",
     readTime: "2,5 menit",
@@ -38,8 +38,8 @@ export const blogPosts = [
   },
   {
     id: 5,
-    title: "Inspirasi Desain Interior untuk Ruang Terbatas",
-    excerpt: "Ide-ide kreatif untuk memaksimalkan ruang terbatas dengan desain interior yang fungsional namun tetap estetis dan nyaman.",
+    title: "Interioir Yang Wajib",
+    excerpt: "Interior rumah yang wajib meliputi furnitur seperti sofa, karpet, meja makan, tempat tidur, dan kursi, serta aksesoris seperti cermin, gorden, dan karya seni untuk menciptakan rumah yang indah dan nyaman. Peralatan rumah tangga seperti lemari, lemari pakaian, dan meja kerja juga penting. Selain itu, aksesoris interior seperti cermin hias, tanaman hias, karpet, dan bantal dekoratif dapat menambah sentuhan estetika dan fungsional",
     date: "18 Februari 2025",
     category: "Info",
     readTime: "2 menit",
