@@ -47,7 +47,7 @@ const FooterNavigation = () => {
             />
           </div>
           <p className="text-sm text-center mt-4 text-gray-500">
-            Scan this code to visit our website on your mobile device
+            Scan untuk mengunjungi situs ini di handphone
           </p>
         </DialogContent>
       </Dialog>
