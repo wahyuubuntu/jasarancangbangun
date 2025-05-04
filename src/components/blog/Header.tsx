@@ -15,11 +15,11 @@ const Header = () => {
           <div className="flex flex-wrap justify-center md:justify-end gap-4 mt-2 md:mt-0 text-sm">
             <div className="flex items-center">
               <span className="mr-2 text-construction-yellow">📞</span>
-              <span>+62 812 3456 7890</span>
+              <span>0889 7560 2673</span>
             </div>
             <div className="flex items-center">
               <span className="mr-2 text-construction-yellow">✉️</span>
-              <span>info@kontraktor-profesional.com</span>
+              <span>-</span>
             </div>
           </div>
         </div>
