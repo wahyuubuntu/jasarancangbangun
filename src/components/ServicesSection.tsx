@@ -19,9 +19,9 @@ const services = [
     icon: '📐'
   },
   {
-    title: 'Interior & Eksterior',
-    description: 'Solusi lengkap untuk memperindah tampilan dalam dan luar bangunan Anda',
-    icon: '🎨'
+    title: 'Pengurusan IMB',
+    description: 'Membantu anda mengurus perizinan dokumen IMB',
+    icon: '📄'
   },
 ];
 
