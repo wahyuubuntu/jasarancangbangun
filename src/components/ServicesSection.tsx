@@ -10,7 +10,7 @@ const services = [
   },
   {
     title: 'Konstruksi Bangunan',
-    description: 'Membangun rumah dan gedung komersial dengan standar kualitas tertinggi',
+    description: 'Membangun rumah dan toko dengan standar kualitas terbaik',
     icon: '🏢'
   },
   {
