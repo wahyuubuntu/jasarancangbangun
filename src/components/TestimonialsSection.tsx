@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     name: 'Siti Rahma',
-    role: 'Pengusaha',
+    role: 'Pemilik Toko',
     content: 'Proyek pembangunan toko saya selesai tepat waktu dan sesuai anggaran. Kualitas konstruksi sangat baik dan tahan lama.',
     avatar: '👩‍💼'
   },
@@ -26,7 +26,7 @@ const testimonials = [
     name: 'Hendro Wijaya',
     role: 'Manajer Properti',
     content: 'Kami telah bekerjasama dalam berbagai proyek dan selalu puas dengan profesionalisme dan kualitas kerja yang diberikan.',
-    avatar: '👨‍🔧'
+    avatar: '👨‍💼'
   }
 ];
 
