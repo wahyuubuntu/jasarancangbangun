@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex flex-col md:flex-row justify-between items-center py-4 px-4">
           <div className="flex items-center">
             <Link to="/" className="text-2xl font-bold text-construction-blue">
-              Kontraktor<span className="text-construction-yellow">Pro</span>
+              Jasa Rancang<span className="text-construction-yellow">Bangun</span>
             </Link>
           </div>
           <div className="flex flex-wrap justify-center md:justify-end gap-4 mt-2 md:mt-0 text-sm">
