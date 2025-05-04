@@ -1,5 +1,4 @@
 import React from 'react'; 
-import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
 const HeroSection = () => {
@@ -12,19 +11,15 @@ const HeroSection = () => {
           Membangun masa depan dengan kualitas dan keahlian terbaik. Kami menyediakan layanan konstruksi lengkap untuk kebutuhan Anda.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button
-            asChild
-            className="bg-construction-yellow hover:bg-yellow-500 text-construction-gray-dark font-medium px-6 py-2 flex items-center gap-2"
+          <a
+            href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20konstruksi%20Anda"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-construction-yellow hover:bg-yellow-500 text-construction-gray-dark font-medium px-6 py-2 flex items-center gap-2 rounded"
           >
-            <a
-              href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20konstruksi%20Anda"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MessageSquare size={20} />
-              Hubungi Kami
-            </a>
-          </Button>
+            <MessageSquare size={20} />
+            Hubungi Kami
+          </a>
         </div>
       </div>
     </div>
