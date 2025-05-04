@@ -11,12 +11,11 @@ const NotFound = () => {
       location.pathname
     );
 
-    // Redirect otomatis setelah 2 detik
     const timer = setTimeout(() => {
       navigate("/");
     }, 2000);
 
-    return () => clearTimeout(timer); // bersihkan timer jika user navigasi cepat
+    return () => clearTimeout(timer);
   }, [location.pathname, navigate]);
 
   return (
