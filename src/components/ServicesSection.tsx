@@ -4,14 +4,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const services = [
   {
-    title: 'Renovasi Rumah',
-    description: 'Ubah rumah Anda menjadi ruang impian dengan layanan renovasi profesional kami',
+    title: 'Bangun dan Renovasi Rumah',
+    description: 'Bangun dan Renovasi Rumah Anda menjadi impian dengan layanan profesional kami',
     icon: '🏠'
   },
   {
-    title: 'Konstruksi Bangunan',
-    description: 'Membangun rumah dan toko dengan standar kualitas terbaik',
-    icon: '🏢'
+    title: 'Membangun Toko',
+    description: 'Membangun toko untuk usaha anda dengan standar kualitas terbaik',
+    icon: '🏪'
   },
   {
     title: 'Desain Arsitektur',
