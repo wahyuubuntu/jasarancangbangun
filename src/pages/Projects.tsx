@@ -51,14 +51,7 @@ const Projects = () => {
                 <div className="p-6">
                   <h2 className="text-xl font-bold mb-2">{item.title}</h2>
                   <p className="text-gray-600">{item.description}</p>
-                  <div className="mt-4">
-                    <Link 
-                      to={`/projects/${index}`}
-                      className="text-construction-blue hover:text-construction-yellow font-medium"
-                    >
-                      Lihat Detail
-                    </Link>
-                  </div>
+                  
                 </div>
               </CardContent>
             </Card>
