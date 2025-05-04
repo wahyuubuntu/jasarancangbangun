@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FooterNavigation from '@/components/FooterNavigation';
@@ -6,10 +5,17 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Badge } from '@/components/ui/badge';
 import { blogPosts } from '@/data/blogPosts';
 
+// Fungsi untuk memotong excerpt
+const truncateExcerpt = (text, maxWords) => {
+  const words = text.split(' ');
+  if (words.length <= maxWords) return text;
+  return words.slice(0, maxWords).join(' ') + '...';
+};
+
 const Blog = () => {
   return (
     <div className="min-h-screen bg-gray-50 pb-24">
-      {/* Header with contact info */}
+      {/* Header */}
       <header className="sticky top-0 bg-white shadow-md z-40">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center py-4 px-4">
@@ -32,7 +38,7 @@ const Blog = () => {
         </div>
       </header>
 
-      {/* Hero section for blog */}
+      {/* Hero section */}
       <div className="bg-construction-blue text-white py-12 mb-8">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Blog & Artikel</h1>
@@ -64,7 +70,7 @@ const Blog = () => {
                 <CardTitle className="text-xl text-construction-blue">{post.title}</CardTitle>
               </CardHeader>
               <CardContent className="p-4 pt-0">
-                <p className="text-gray-600">{post.excerpt}</p>
+                <p className="text-gray-600">{truncateExcerpt(post.excerpt, 20)}</p>
               </CardContent>
               <CardFooter className="p-4 pt-0 flex justify-between items-center">
                 <Link to={`/blog/${post.id}`} className="text-construction-blue hover:text-construction-yellow font-medium">
@@ -77,7 +83,7 @@ const Blog = () => {
         </div>
       </main>
 
-      {/* Footer Navigation */}
+      {/* Footer */}
       <FooterNavigation />
     </div>
   );
