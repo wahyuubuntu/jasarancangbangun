@@ -16,14 +16,14 @@ import { Image } from 'lucide-react';
 // Define the portfolio items with image URLs, titles and descriptions
 const portfolioItems = [
   {
-    image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67",
-    title: "Proyek Konstruksi Taman",
-    description: "Renovasi dan pembangunan taman publik di area kota dengan fitur lansekap modern."
+    image: "https://iili.io/3wNz5xI.jpg",
+    title: "Proyek Bangun Rumah",
+    description: "Pembuatan proyek rumah tinggal, dengan kualitas terbaik kami siap membangun hunian rumah sesuai keinginan anda"
   },
   {
-    image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
-    title: "Gedung Perkantoran Modern",
-    description: "Pembangunan gedung perkantoran 12 lantai dengan arsitektur modern dan efisiensi energi."
+    image: "https://iili.io/3wNzuNp.jpg",
+    title: "Proyek Bangun Rumah",
+    description: "Pembuatan proyek rumah tinggal, dengan kualitas terbaik kami siap membangun hunian rumah sesuai keinginan anda"
   },
   {
     image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e",
@@ -51,7 +51,7 @@ const PortfolioSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-construction-blue mb-4">Portfolio Proyek</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Berikut adalah beberapa proyek konstruksi yang telah kami selesaikan dengan kualitas terbaik
+            Berikut adalah beberapa proyek yang telah kami selesaikan dengan kualitas terbaik
             dan kepuasan pelanggan yang maksimal.
           </p>
         </div>
