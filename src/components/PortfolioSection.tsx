@@ -36,9 +36,9 @@ const portfolioItems = [
     description: "Tidak hanya rumah kami juga membangun dan merenovasi masjid, desain gratis jika yang akan membangun masjid"
   },
   {
-    image: "https://images.unsplash.com/photo-1473177104440-ffee2f376098",
-    title: "Renovasi Bangunan Bersejarah",
-    description: "Restorasi dan renovasi bangunan bersejarah dengan mempertahankan nilai arsitektur asli."
+    image: "https://scontent.fbdo13-1.fna.fbcdn.net/v/t39.30808-6/495020715_1155520519923586_6291356149085679389_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EMamyBfP8CIQ7kNvwH81GSd&_nc_oc=AdmGeww2a5HOB2p8-CSYCMnQXTv_IHCfaQhWcIcutqVgXshzw04emf1dZI7hWtc-YWY&_nc_zt=23&_nc_ht=scontent.fbdo13-1.fna&_nc_gid=yXzjmBxTFIk7b0UvhoNdmg&oh=00_AfH4KECDh5MDIvPLDmJtkS0AXvZwiEzAEYNhSrqv7Ak7Ig&oe=681CE5C8",
+    title: "Bangun Tempat Usaha",
+    description: "Pembuatan tempat usaha, kami juga bisa membuat toko untuk usaha anda sesuai permintaan"
   }
 ];
 
