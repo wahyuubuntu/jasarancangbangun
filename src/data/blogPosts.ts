@@ -34,7 +34,7 @@ export const blogPosts = [
     date: "2 Maret 2025",
     category: "Info",
     readTime: "2,5 menit",
-    image: "https://images.unsplash.com/photo-1628254095259-cd352547a0af?q=80&w=1170"
+    image: "https://www.lamudi.co.id/journal/wp-content/uploads/2022/07/kamar-mandi-sederhana-4.jpg"
   },
   {
     id: 5,
