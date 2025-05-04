@@ -35,7 +35,7 @@ const FooterNavigation = () => {
         <DialogContent className="sm:max-w-[425px] flex flex-col items-center">
           <DialogHeader>
             <DialogTitle className="text-xl font-bold text-construction-blue">
-              Scan Our QR Code
+              Scan QR Code
             </DialogTitle>
           </DialogHeader>
           <div className="p-6 bg-white rounded-lg shadow-inner">
