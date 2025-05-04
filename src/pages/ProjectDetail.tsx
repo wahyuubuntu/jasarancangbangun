@@ -30,17 +30,17 @@ const ProjectDetail = () => {
           <div className="flex flex-col md:flex-row justify-between items-center py-4 px-4">
             <div className="flex items-center">
               <Link to="/" className="text-2xl font-bold text-construction-blue">
-                Kontraktor<span className="text-construction-yellow">Pro</span>
+                Jasa Rancang <span className="text-construction-yellow">Bangun</span>
               </Link>
             </div>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 mt-2 md:mt-0 text-sm">
               <div className="flex items-center">
                 <span className="mr-2 text-construction-yellow">📞</span>
-                <span>+62 812 3456 7890</span>
+                <span>0889 7560 2673</span>
               </div>
               <div className="flex items-center">
                 <span className="mr-2 text-construction-yellow">✉️</span>
-                <span>info@kontraktor-profesional.com</span>
+                <span>-</span>
               </div>
             </div>
           </div>
