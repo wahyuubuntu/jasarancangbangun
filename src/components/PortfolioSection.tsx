@@ -16,7 +16,7 @@ import { Image } from 'lucide-react';
 // Define the portfolio items with image URLs, titles and descriptions
 const portfolioItems = [
   {
-    image: "https://iili.io/3wNz5xI.jpg",
+    image: "https://scontent.fbdo13-1.fna.fbcdn.net/v/t1.6435-9/41990886_1588955104542688_3191271605573517312_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Ngv3e5ldqgUQ7kNvwFNht3t&_nc_oc=AdnAA62gVkAK0ZqaLh6PqL-7-hDk0Osl-rgHW-TX1VC-mFnM8oR3CEkTAsVq1ErNYHA&_nc_zt=23&_nc_ht=scontent.fbdo13-1.fna&_nc_gid=_3hbHPZAFVVnAHryh3K9OQ&oh=00_AfF3_cqucvu4ranOwNuxl2foVeJ_I-2TQdDBvOFuCRv-kA&oe=683E8DCF",
     title: "Proyek Bangun Rumah",
     description: "Pembuatan proyek rumah tinggal, dengan kualitas terbaik kami siap membangun hunian rumah sesuai keinginan anda"
   },
