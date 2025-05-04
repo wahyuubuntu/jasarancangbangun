@@ -12,15 +12,15 @@ const ContactSection = () => {
           <div className="space-y-5">
             <div className="flex items-start">
               <span className="mr-3 text-construction-yellow">📍</span>
-              <p>Jl. Konstruksi No. 123, Jakarta Selatan, Indonesia</p>
+              <p>Jl. Sultan Ageng Tirtayasa No.8 Cempaka, Kec Talun, cirebon, Indonesia, 45171</p>
             </div>
             <div className="flex items-start">
               <span className="mr-3 text-construction-yellow">📞</span>
-              <p>+62 812 3456 7890</p>
+              <p>0889 7560 2673</p>
             </div>
             <div className="flex items-start">
               <span className="mr-3 text-construction-yellow">✉️</span>
-              <p>info@kontraktor-profesional.com</p>
+              <p>-</p>
             </div>
             <div className="flex items-start">
               <span className="mr-3 text-construction-yellow">⏰</span>
