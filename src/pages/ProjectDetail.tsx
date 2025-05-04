@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import FooterNavigation from '@/components/FooterNavigation';
@@ -109,11 +108,18 @@ const ProjectDetail = () => {
                 </p>
               </div>
             </div>
-            
+
+            {/* Tombol Konsultasi WhatsApp */}
             <div className="mt-8 pt-6 border-t border-gray-200">
-              <Button className="bg-construction-blue hover:bg-construction-yellow text-white transition-colors">
-                Konsultasi Proyek Serupa
-              </Button>
+              <a
+                href="https://wa.me/6288975602673?text=Halo%20saya%20ingin%20konsultasi%20tentang%20proyek%20serupa."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-construction-blue hover:bg-construction-yellow text-white transition-colors">
+                  Konsultasi Proyek Serupa
+                </Button>
+              </a>
             </div>
           </div>
         </div>
