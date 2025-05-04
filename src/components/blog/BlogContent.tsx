@@ -10,13 +10,7 @@ const BlogContent: React.FC<BlogContentProps> = ({ post }) => {
   return (
     <div className="prose max-w-none">
       <p className="text-gray-700 mb-6">{post.excerpt}</p>
-      
-      <p className="mb-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra, nisl a ultrices dignissim, 
-        justo nisl sagittis nulla, vel consectetur nisl mauris in sem. Mauris vel mauris nec nunc 
-        pharetra finibus. Nulla facilisi. Mauris vel nisl vel velit commodo vestibulum.
-      </p>
-      
+     
       
       <div className="my-8 p-4 bg-gray-50 border-l-4 border-construction-blue">
         <p className="italic">
